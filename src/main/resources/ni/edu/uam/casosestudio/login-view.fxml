@@ -5,7 +5,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="420.0" prefWidth="460.0" spacing="24.0" style="-fx-background-color: #f4f7fb;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.casosestudio.controller.LoginController">
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="460.0" spacing="24.0" style="-fx-background-color: #f4f7fb;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.casosestudio.controller.LoginController" onKeyPressed="#onKeyPressed">
     <padding>
         <Insets bottom="32.0" left="44.0" right="44.0" top="32.0" />
    </padding>

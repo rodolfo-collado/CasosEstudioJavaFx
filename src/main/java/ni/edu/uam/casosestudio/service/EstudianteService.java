@@ -20,4 +20,15 @@ public class EstudianteService {
         return estudiantes;
     }
 
+    public boolean removeEstudiante(Estudiante estudiante){
+        return estudiantes.remove(estudiante);
+    }
+
+    public boolean updateEstudiante(int index, Estudiante estudiante){
+        if (index >= 0 && index < estudiantes.size()) {
+            estudiantes.set(index, estudiante);
+            return true;
+        }
+        return false;
+    }
 }

@@ -31,6 +31,13 @@ public class Estudiante {
         this.nombre = nombre;
     }
 
+    public String getNombreCompleto() {
+        if (apellido != null && !apellido.trim().isEmpty()) {
+            return (nombre != null ? nombre : "") + " " + apellido;
+        }
+        return nombre != null ? nombre : "";
+    }
+
     public String getApellido() {
         return apellido;
     }

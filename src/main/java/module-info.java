@@ -7,4 +7,6 @@ module ni.edu.uam.casosestudio {
     exports ni.edu.uam.casosestudio;
     exports ni.edu.uam.casosestudio.controller;
     opens ni.edu.uam.casosestudio.controller to javafx.fxml;
+    exports ni.edu.uam.casosestudio.model;
+    opens ni.edu.uam.casosestudio.model to javafx.fxml, javafx.base;
 }

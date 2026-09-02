@@ -11,7 +11,9 @@ public class UsuarioService {
     public UsuarioService(){
         this.usuarios = new ArrayList<>();
         Usuario defaultUser = new Usuario("admin", "admin");
+        Usuario defaultAdmin8 = new Usuario("admin", "admin1234");
         usuarios.add(defaultUser);
+        usuarios.add(defaultAdmin8);
     }
 
     public List<Usuario> getAllUsuarios(){
