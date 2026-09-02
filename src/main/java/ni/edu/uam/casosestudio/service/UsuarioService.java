@@ -10,11 +10,18 @@ public class UsuarioService {
 
     public UsuarioService(){
         this.usuarios = new ArrayList<>();
-        Usuario deffaultUser = new Usuario("admin", "admin");
-        usuarios.add(deffaultUser);
+        Usuario defaultUser = new Usuario("admin", "admin");
+        usuarios.add(defaultUser);
     }
 
     public List<Usuario> getAllUsuarios(){
         return usuarios;
+    }
+
+    public boolean esAdmin(String username, String password) {
+        return usuarios.stream()
+                .anyMatch(usuario -> "admin".equals(usuario.getUsername())
+                        && usuario.getUsername().equals(username)
+                        && usuario.getPassword().equals(password));
     }
 }
