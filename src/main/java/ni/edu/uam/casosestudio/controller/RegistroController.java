@@ -1,9 +1,9 @@
-package ni.edu.uam.casosestudio;
+package ni.edu.uam.casosestudio.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class RegistroController {
     @FXML
     private Label welcomeText;
 
