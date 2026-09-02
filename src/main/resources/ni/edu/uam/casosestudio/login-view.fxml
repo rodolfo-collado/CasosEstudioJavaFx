@@ -1,16 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ni.edu.uam.casosestudio.controller.LoginController">
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="460.0" spacing="24.0" style="-fx-background-color: #f4f7fb;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.casosestudio.controller.LoginController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+        <Insets bottom="32.0" left="44.0" right="44.0" top="32.0" />
+   </padding>
+   <children>
+      <HBox alignment="CENTER" spacing="16.0">
+         <children>
+            <Label contentDisplay="TOP" text="Registro de matrícula" textAlignment="CENTER" style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #17324d;" />
+            <ImageView fx:id="imgLogin" fitHeight="72.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <GridPane hgap="12.0" maxWidth="360.0" vgap="14.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" minWidth="90.0" prefWidth="105.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="210.0" prefWidth="245.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="38.0" />
+            <RowConstraints minHeight="38.0" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="lblUser" text="Usuario:" style="-fx-font-size: 14px; -fx-text-fill: #263849;" />
+            <TextField fx:id="txtUsuario" prefHeight="36.0" promptText="Ingrese su usuario" GridPane.columnIndex="1" />
+            <Label fx:id="lblPassword" text="Contraseña:" style="-fx-font-size: 14px; -fx-text-fill: #263849;" GridPane.rowIndex="1" />
+            <PasswordField fx:id="txtContrasena" prefHeight="36.0" promptText="Ingrese su contraseña" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" spacing="12.0">
+         <children>
+            <Button fx:id="btnIngresar" defaultButton="true" minWidth="110.0" onAction="#onIngresarClick" text="Ingresar" style="-fx-background-color: #1f6feb; -fx-text-fill: white; -fx-font-weight: bold;" />
+            <Button fx:id="btnCancelar" cancelButton="true" minWidth="110.0" onAction="#onCancelarClick" text="Cancelar" />
+         </children>
+      </HBox>
+   </children>
 </VBox>

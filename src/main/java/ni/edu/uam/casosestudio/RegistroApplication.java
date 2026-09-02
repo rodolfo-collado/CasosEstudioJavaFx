@@ -11,8 +11,8 @@ public class RegistroApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(RegistroApplication.class.getResource("registro-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load(), 990, 600);
+        stage.setTitle("Registro de matrícula");
         stage.setScene(scene);
         stage.show();
     }
