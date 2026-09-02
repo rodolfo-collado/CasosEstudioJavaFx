@@ -3,6 +3,7 @@ package ni.edu.uam.casosestudio.controller;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -12,6 +13,12 @@ import java.io.IOException;
 public class LoginController {
     @FXML
     private TextField txtUsuario;
+
+    @FXML
+    private Button btnIngresar;
+
+    @FXML
+    private Button btnCancelar;
 
     @FXML
     private PasswordField txtContrasena;

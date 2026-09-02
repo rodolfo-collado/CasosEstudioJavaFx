@@ -8,10 +8,14 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 public class RegistroController {
     @FXML
     private TextField txtNombreCompleto;
+
+    @FXML
+    private ImageView imgRegistro;
 
     @FXML
     private DatePicker dpFechaNacimiento;
